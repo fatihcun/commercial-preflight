@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "name": "Example Industrial Systems",
+    "default_currency": "EUR",
+    "allowed_currencies": [
+      "EUR",
+      "USD",
+      "TRY"
+    ]
+  },
+  "commercial_policy": {
+    "minimum_gross_margin_pct": 15.0,
+    "maximum_sales_discount_pct": 10.0,
+    "maximum_payment_term_days": 60,
+    "maximum_quote_validity_days": 30,
+    "allowed_tax_rates_pct": [
+      0.0,
+      10.0,
+      20.0
+    ],
+    "require_quote_number": true,
+    "require_revision": true,
+    "require_customer_name": true,
+    "require_quote_date": true,
+    "require_valid_until": true
+  },
+  "forbidden_outgoing_terms": [
+    "internal cost",
+    "purchase price",
+    "distributor price",
+    "gross margin",
+    "internal note",
+    "do not send",
+    "confidential cost"
+  ],
+  "severity_policy": {
+    "CRITICAL": [
+      "CP-MATH-001",
+      "CP-CUST-001"
+    ],
+    "REVIEW": [
+      "CP-POL-001",
+      "CP-POL-002",
+      "CP-HYG-001",
+      "CP-DATE-001",
+      "CP-META-001"
+    ]
+  }
+}

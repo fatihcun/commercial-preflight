@@ -1,0 +1,10 @@
+[package]
+name = "commercial-preflight-rules"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+commercial-preflight-core = { path = "../core" }
+commercial-preflight-policy = { path = "../policy" }

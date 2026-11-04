@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "apps/cli",
+    "apps/desktop/src-tauri",
+    "crates/core",
+    "crates/engine",
+    "crates/intake",
+    "crates/pdf",
+    "crates/policy",
+    "crates/reconciliation",
+    "crates/rules",
+    "crates/storage",
+    "crates/xlsx",
+]
+default-members = ["apps/cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+thiserror = "2.0.20"

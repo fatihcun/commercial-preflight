@@ -1,0 +1,10 @@
+[project]
+name = "commercial-preflight-reference"
+version = "0.1.0"
+description = "Reference engine for Commercial Preflight XLSX rule contract"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = ["openpyxl>=3.1,<4"]
+
+[project.scripts]
+preflight = "preflight.cli:main"

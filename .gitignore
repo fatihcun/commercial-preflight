@@ -1,0 +1,38 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rust, Node, and application build output
+target/
+node_modules/
+dist/
+build/
+coverage/
+apps/desktop/src-tauri/gen/
+
+# Local application data and diagnostics
+*.log
+*.sqlite
+*.sqlite3
+
+# Editors and operating systems
+.idea/
+.vscode/
+.vs/
+*.suo
+*.user
+*.swp
+*.swo
+.DS_Store
+Desktop.ini
+Thumbs.db
+~$*

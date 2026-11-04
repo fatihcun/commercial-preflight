@@ -1,0 +1,42 @@
+{
+  "fixture": "Project_Orion_Quote_v0.1.xlsx",
+  "as_of_date": "2026-10-30",
+  "expected_findings": [
+    {
+      "rule_id": "CP-POL-001",
+      "severity": "REVIEW",
+      "title": "Discount exceeds company policy",
+      "evidence": "18.0% discount on Industrial Gateway Controller; policy maximum 10.0%"
+    },
+    {
+      "rule_id": "CP-POL-002",
+      "severity": "REVIEW",
+      "title": "Payment term exceeds company policy",
+      "evidence": "90 days; policy maximum 60 days"
+    },
+    {
+      "rule_id": "CP-HYG-001",
+      "severity": "REVIEW",
+      "title": "Hidden worksheet contains commercial-sensitive content",
+      "evidence": "Hidden sheet: Internal Cost"
+    },
+    {
+      "rule_id": "CP-MATH-001",
+      "severity": "CRITICAL",
+      "title": "Declared grand total does not match calculated total",
+      "evidence": "Declared total is EUR 4,250 below calculated expected total"
+    },
+    {
+      "rule_id": "CP-META-001",
+      "severity": "REVIEW",
+      "title": "Prior-customer metadata detected",
+      "evidence": "Workbook metadata contains Example Legacy Machinery while proposal customer is Example Energy A.Ş."
+    },
+    {
+      "rule_id": "CP-DATE-001",
+      "severity": "REVIEW",
+      "title": "Quote validity has expired",
+      "evidence": "Valid Until = 2026-10-29; scan date = 2026-10-30"
+    }
+  ]
+}

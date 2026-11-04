@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Commercial Preflight",
+  "version": "0.1.0",
+  "identifier": "com.commercialpreflight.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Commercial Preflight",
+        "width": 1100,
+        "height": 720,
+        "minWidth": 860,
+        "minHeight": 600,
+        "center": true,
+        "resizable": true,
+        "visible": false,
+        "focus": false,
+        "dragDropEnabled": true,
+        "theme": "Light"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src ipc: http://ipc.localhost; img-src 'self' asset: data:; style-src 'self'; script-src 'self'",
+      "capabilities": ["main"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "shortDescription": "Local quote-to-order assurance for commercial operations.",
+    "longDescription": "Commercial Preflight verifies locally that PDF and XLSX customer orders match the exact quote revision that was sent or approved, and routes only exceptions to human review.",
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser"
+      }
+    }
+  }
+}
