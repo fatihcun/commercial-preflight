@@ -223,6 +223,12 @@ Pop-Location
 python -m unittest discover -s tests -p "test_*.py"
 ```
 
+<img width="1095" height="748" alt="Ekran görüntüsü 2026-11-04 111903" src="https://github.com/user-attachments/assets/6c903bdd-ca01-4752-aa96-269409302601" />
+<img width="1091" height="744" alt="Ekran görüntüsü 2026-11-04 111918" src="https://github.com/user-attachments/assets/80bbe1e9-c37e-4d44-a24c-64d62f8c0a49" />
+<img width="1101" height="746" alt="Ekran görüntüsü 2026-11-04 111930" src="https://github.com/user-attachments/assets/008383c0-931c-4496-8301-e77e60d88197" />
+
+
+
 The regression suite covers synthetic XLSX and PDF proposal checks, hostile or
 incomplete input, quote/order association and differences, local persistence,
 watched-folder intake, and desktop localization/onboarding behavior.
